@@ -32,6 +32,11 @@
     padding: 20px;
 }
 
+.wrapper>div:nth-child(2) h3 {
+    font-size: 1.2;
+    text-transform: capitalize;
+}
+
 .timer {
     border: 1px solid grey;
     border-radius: 20px;
@@ -42,4 +47,16 @@
 
 .timer>h3 {
     font-size: 2em;
+}
+
+@media only screen and (max-width: 624px) {
+    .wrapper {
+        padding: 0;
+        width: 80%;
+        min-width: 390px;
+    }
+
+    .wrapper>div:nth-child(2) {
+        font-size: 1em;
+    }
 }
